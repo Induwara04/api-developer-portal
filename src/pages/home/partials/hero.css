@@ -5,7 +5,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: var(--main-bg-color);
   height: auto;
 }
 
@@ -13,7 +13,7 @@ body {
   width: 100%;
   max-width: 900px;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .hero-content {
@@ -26,7 +26,7 @@ body {
 .hero-content h1,
 .hero-content p,
 .hero-content span {
-  color: var(--font-colour-primary);
+  color: var(--main-text-color);
 }
 
 .hero-content h1 {
@@ -35,20 +35,25 @@ body {
 }
 
 .hero-content p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
 }
 
 .hero-content span {
   font-size: 48px;
   margin-bottom: 20px;
-  color: var(--light-color);
+  color: var(--secondary-color);
 }
 
-.buttons {
+.hero-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.hero-buttons .common-btn-secondary {
+  color: var(--secondary-color);
+  background-color: var(--light-color);
 }
 
 .hero-image img {
@@ -58,16 +63,9 @@ body {
   max-height: 700px;
 }
 
-.hero-btn:hover {
-  filter: brightness(1.1);
-}
-
-.hero-btn:active {
-  filter: brightness(0.9);
-}
-
-.hero-btn:focus {
-  box-shadow: 0 0 0 1px rgba(226, 225, 252, 0.5);
+.hero-buttons .common-btn-primary:hover {
+  background-color: var(--primary-light-color);
+  color: var(--font-colour-primary);
 }
 
 .anim {

@@ -3,6 +3,7 @@
 @import '/styles/footer.css';
 @import '/styles/header.css';
 @import '/styles/feature.css';
+@import '/styles/stats.css';
 @import '/styles/customers.css';
 @import '/styles/benifits.css';
 @import '/styles/testimonials.css';
@@ -14,17 +15,19 @@
 @import '/styles/tryout-banner.css';
 @import '/styles/api-content.css';
 @import '/styles/pricing.css';
+@import '/styles/legal-page.css';
+@import '/styles/ecihero.css';
 :root {
   --main-bg-color: #f7f8fb;
   --light-bg-color: #ffffff;
   --main-text-color: #40404b;
   --light-text-color: #6b7280;
   --dark-text-color: #000000;
-  --primary-color: #3e6ff2;
-  --primary-light-color: #CCD1F2;
-  --secondary-color: #0f2751;
-  --light-color: #ffc371;
-  --dark-color: #0f3971;
+  --primary-color: #30a56e;
+  --primary-light-color: #60c695;
+  --secondary-color: #2fa56d;
+  --light-color: #c0f4db;
+  --dark-color: #0850ad;
   --success-color: #28a745;
   --danger-color: #dc3545;
   --warning-color: #ffc107;
@@ -32,7 +35,7 @@
   --font-colour-primary: #ffffff;
   --border-colour-primary: #1a73e8;
   --border-colour-secondary: #ffffff;
-  --notselect-star-color: #bebec0;
+  --light-ash-color: #bebec0;
 
   --font-family-sans: "Poppins", sans-serif;
   --font-family-serif: "Sofia Sans", serif;

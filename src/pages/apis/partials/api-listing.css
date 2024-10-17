@@ -126,7 +126,7 @@ body {
 }
 
 .form-check-input{
-  border-color: var(--notselect-star-color);
+  border-color: var(--light-ash-color);
 }
 
 hr {
@@ -257,5 +257,5 @@ hr {
 
 .star:hover,
 .star.noselected {
-  color: var(--notselect-star-color);
+  color: var(--light-ash-color);
 }

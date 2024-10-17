@@ -1,0 +1,104 @@
+.ecihero-container {
+  width: 90%;
+  max-width: 1800px;
+  margin: 50px auto;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ecihero-section {
+  position: relative;
+  background: url("//www.elcorteingles.es/recursos/informacioncorporativa/img/portal/2023/06/15/modelo-omnicanal.jpg")
+    no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ecihero-content {
+  z-index: 2;
+  text-align: center;
+  color: var(--font-colour-primary);
+  max-width: 650px;
+  padding-top: 280px;
+}
+
+.ecihero-content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--font-colour-primary);
+}
+
+.ecihero-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.25;
+  color: var(--font-colour-primary);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.eciprimary-button {
+  background-color: var(--primary-color);
+  color: var(--main-bg-color);
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.eciprimary-button:hover {
+  background-color: var(--primary-light-color);
+  color: var(--font-colour-primary);
+}
+
+.ecisecondary-button {
+  background-color: var(--main-bg-color);
+  color: var(--primary-color);
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.ecisecondary-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+    text-align: center;
+  }
+}

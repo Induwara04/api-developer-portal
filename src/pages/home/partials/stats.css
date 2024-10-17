@@ -1,0 +1,117 @@
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.stats-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.stats-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  min-width: 200px;
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: var(--main-text-color);
+}
+
+.line {
+  position: relative;
+  width: 1px;
+  background-color: var(--light-ash-color);
+  height: 100px;
+  align-self: center;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100px;
+  background-color: var(--light-ash-color);
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--light-ash-color);
+  border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  .stats-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-item {
+    padding: 10px 0;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-header h2 {
+    font-size: 2rem;
+  }
+
+  .stat-item h3 {
+    font-size: 2rem;
+  }
+
+  .stat-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-container {
+    padding: 40px 10px;
+  }
+
+  .stats-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .stat-item h3 {
+    font-size: 1.8rem;
+  }
+
+  .stat-item p {
+    font-size: 0.8rem;
+  }
+}
