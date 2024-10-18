@@ -17,6 +17,7 @@
 @import '/styles/pricing.css';
 @import '/styles/legal-page.css';
 @import '/styles/ecihero.css';
+@import '/styles/ecifeature.css';
 :root {
   --main-bg-color: #f7f8fb;
   --light-bg-color: #ffffff;
