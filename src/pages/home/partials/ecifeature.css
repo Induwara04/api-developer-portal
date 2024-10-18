@@ -46,6 +46,8 @@
   color: var(--main-text-color);
   margin-bottom: 20px;
   line-height: 1.5;
+  max-width: 80%;
+  margin-right: auto;
 }
 
 .right-feature.reverse {
@@ -53,7 +55,7 @@
 }
 
 .ecilearn-more {
-  color: var(--dark-color);
+  color: var(--primary-color);
   font-size: 12px;
   text-decoration: none;
   display: inline-block;
@@ -102,6 +104,37 @@
   }
 
   .ecifeature-image {
+    justify-content: center;
     margin-bottom: 20px;
+  }
+
+  .ecifeature-content {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .right-feature.reverse,
+  .left-feature {
+    text-align: center;
+  }
+
+  .ecifeature-img {
+    margin: 0 auto 20px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .ecifeature-content h2 {
+    font-size: 14px;
+  }
+
+  .ecifeature-content p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .ecilearn-more {
+    font-size: 10px;
   }
 }
