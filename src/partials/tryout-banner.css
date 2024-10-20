@@ -1,6 +1,11 @@
 .tryout-banner-content {
+  padding: 40px;
+  width: 83%;
+  overflow: hidden;
+  max-width: 1800px;
+  margin: 60px auto;
+  border-radius: 12px;
   text-align: center;
-  padding: 50px;
   background-color: var(--primary-color);
   max-height: 450px;
 }
@@ -24,4 +29,69 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
+}
+.custom-try-btn {
+  background-color: var(--main-bg-color);
+  color: var(--primary-color);
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+  border: 0;
+}
+
+.custom-try-btn:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 1200px) {
+  .tryout-banner-content {
+    width: 90%;
+    padding: 30px;
+    margin: 50px auto;
+    max-height: 400px;
+  }
+
+  .tryout-banner-content h1 {
+    font-size: 26px;
+  }
+
+  .tryout-banner-content p {
+    font-size: 14px;
+  }
+
+  .custom-try-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tryout-banner-content {
+    width: 100%;
+    padding: 20px;
+    margin: 40px auto;
+    max-height: none;
+  }
+
+  .tryout-banner-content h1 {
+    font-size: 22px;
+  }
+
+  .tryout-banner-content p {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .custom-try-btn {
+    padding: 8px 18px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tryout-banner-btn {
+    flex-direction: column;
+    gap: 15px;
+  }
 }

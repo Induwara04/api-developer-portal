@@ -1,30 +1,47 @@
 <section>
   <div class="container-fluid api-banner-container">
-    <div class="col-12">
-      <div class="col-12 col-md-auto">
+    <div class="row align-items-center api-banner-content">
+      <div class="col-12 col-md-7">
+        <div class="api-title">
+          <span
+            class="badge api-badge-custom1"
+          >{{apiMetadata.apiInfo.apiCategory}}</span>
+          <h4>{{apiMetadata.apiInfo.apiName}}</h4>
+        </div>
+        <p class="api-description">{{apiMetadata.apiInfo.apiDescription}}</p>
+        <div class="api-tags">
+          {{#apiMetadata.apiInfo.tags}}
+            <span class="badge api-badge-custom2">{{this}}</span>
+          {{/apiMetadata.apiInfo.tags}}
+        </div>
+        <div class="api-details-btn">
+          {{#in apiMetadata.apiInfo.apiType values="REST,AsyncAPI,GraphQL"}}
+            <a
+              type="button"
+              class="common-btn-primary"
+              href="{{baseUrl}}/api/{{apiMetadata.apiInfo.apiName}}/tryout"
+            >Try It Out</a>
+          {{else}}
+            <a
+              type="button"
+              class="common-btn-primary"
+              href="{{{schemaUrl}}}"
+              download
+            >Download</a>
+          {{/in}}
+          <a
+            type="button"
+            class="common-btn-primary api-banner-secondary-btn"
+            href="#"
+          >Documentation</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 text-md-right">
         <img
           class="img-thumbnail api-image"
           src="{{apiMetadata.apiInfo.apiArtifacts.apiImages.api-icon}}"
           alt="API Image"
         />
-      </div>
-      <div class="api-title">
-        <h4>{{apiMetadata.apiInfo.apiName}}</h4>
-        <span class="badge api-badge-custom1">{{apiMetadata.apiInfo.apiCategory}}</span>
-      </div>
-      <p> {{apiMetadata.apiInfo.apiVersion}}</p>
-      <p class="api-desciption">{{apiMetadata.apiInfo.apiDescription}}</p>
-      <div class="api-tags">
-        {{#apiMetadata.apiInfo.tags}}
-        <span class="badge api-badge-custom2">{{this}}</span>
-        {{/apiMetadata.apiInfo.tags}}
-      </div>
-      <div class="api-details-btn ">
-        {{#in apiMetadata.apiInfo.apiType values="REST,AsyncAPI,GraphQL"}}
-          <a type="button" class="common-btn-primary" href="{{baseUrl}}/api/{{apiMetadata.apiInfo.apiName}}/tryout">Try Out</a>
-        {{else}}
-          <a type="button" class="common-btn-primary" href="{{{schemaUrl}}}" download>Download</a>
-        {{/in}}
       </div>
     </div>
   </div>

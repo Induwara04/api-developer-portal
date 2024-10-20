@@ -261,6 +261,45 @@ hr {
   --bs-pagination-font-size: 12px;
 }
 
-.items-label{
+.items-label {
   font-size: 12px;
+}
+
+@media (max-width: 992px) {
+
+  .apilist-hero-content h1 {
+    font-size: 28px;
+  }
+
+  .apilist-hero-content span {
+    font-size: 34px;
+  }
+
+  .search-input {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .apilist-hero-container {
+    margin-top: 10px;
+  }
+  .search-input {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 576px) {
+  .apilist-hero-content h1 {
+    font-size: 24px;
+  }
+
+  .apilist-hero-content span {
+    font-size: 28px;
+  }
+
+  .search-input {
+    max-width: 100%;
+    padding: 8px 15px;
+  }
 }

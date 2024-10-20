@@ -1,14 +1,94 @@
-/* styles of key features */
+/* Styles for Key Features */
 .features-container {
-  padding: 60px 40px 20px 40px;
-  background-color: var(--main-bg-color);
+  padding: 40px 0px;
   text-align: center;
+  width: 83%;
+  overflow: hidden;
+  max-width: 1800px;
+}
+
+.apibenefits-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.keyfeature-card {
+  background-color: var(--light-bg-color);
+  border-radius: 12px;
+  box-shadow: 0 2px 2px rgba(125, 124, 124, 0.1);
+  padding: 28px;
+  width: 30%;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.keyfeature-card:hover {
+  transform: translateY(-5px);
+}
+
+.keyfeature-img {
+  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.keyfeature-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--main-text-color);
+  margin-bottom: 10px;
+}
+
+.keyfeature-description {
+  font-size: 14px;
+  color: var(--main-text-color);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.keyfeature-link {
+  color: var(--primary-color);
+  font-size: 12px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.keyfeature-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .keyfeature-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .keyfeature-card {
+    width: 100%;
+  }
 }
 
 /* styles of api overview */
 .api-overview {
-  padding: 40px 80px;
-  background-color: var(--light-bg-color);
+  padding: 40px 0px;
+  width: 83%;
+  overflow: hidden;
+  max-width: 1800px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #e5f2fb 0%, #e4fbf0 100%);
+  box-shadow: 0 2px 2px rgba(125, 124, 124, 0.1);
+  margin-top: 20px;
+}
+
+.api-overview-content {
+  padding: 0 40px;
 }
 
 .overview-title {
@@ -108,9 +188,15 @@
 }
 
 .howwork-content {
-  padding: 60px 30px 40px 30px;
-  background-color: var(--main-bg-color);
+  background-color: var(--light-bg-color);
   text-align: center;
+  padding: 40px 0px;
+  width: 83%;
+  overflow: hidden;
+  max-width: 1800px;
+  margin-top: 60px;
+  border-radius: 12px;
+  box-shadow: 0 2px 2px rgba(125, 124, 124, 0.1);
 }
 
 .card-section {
@@ -124,11 +210,11 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-height: 275px;
+  min-height: 200px;
 }
 
-.card-body {
-  padding: 20px;
+.apiovecard-body {
+  padding: 30px;
 }
 
 .icon-container {
@@ -141,7 +227,7 @@
 .icon-circle {
   width: 50px;
   height: 50px;
-  background-color: var(--dark-color);
+  background-color: var(--primary-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -176,16 +262,25 @@
 
 /* styles of FAQ */
 .faq-container {
-  padding: 40px 70px;
-  background-color: var(--main-bg-color);
-  text-align: left;
-  margin-top: 20px;
+  background-color: var(--light-bg-color);
+  padding: 40px;
+  width: 83%;
+  overflow: hidden;
+  max-width: 1800px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 2px rgba(125, 124, 124, 0.1);
+}
+
+.faq-header{
+  text-align: center;
 }
 
 .faq-container h1 {
-  font-size: 32px;
-  color: var(--main-text-color);
+  font-size: 30px;
   margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--main-text-color);
 }
 
 .faq-container p {
@@ -221,7 +316,6 @@
 
 .faq-badge-custom1 {
   border: 1px solid var(--border-colour-primary);
-  background-color: #d0e1f6;
   color: var(--border-colour-primary);
   margin: 0px 5px 10px 0;
   padding: 6px 20px;
@@ -240,4 +334,132 @@ hr {
   border-top: 1px solid #abb0c0;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/* Responsive styles for Key Features */
+@media (max-width: 1200px) {
+  .features-container {
+    width: 90%;
+    padding: 30px 0;
+  }
+
+  .keyfeature-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .keyfeature-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive styles for API Overview */
+@media (max-width: 1200px) {
+  .api-overview {
+    width: 90%;
+    padding: 30px 0;
+  }
+
+  .api-overview-content {
+    padding: 0 20px;
+  }
+
+  .overview-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .api-overview {
+    width: 100%;
+  }
+
+  .overview-title {
+    font-size: 28px;
+  }
+}
+
+/* Responsive styles for Sidebar and API List */
+@media (max-width: 1024px) {
+  .api-sidebar {
+    padding: 25px;
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .api-sidebar {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .api-list li {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+}
+
+/* Responsive styles for How it Works section */
+@media (max-width: 1024px) {
+  .howwork-content {
+    width: 90%;
+    padding: 30px 0;
+  }
+
+  .custom-api-card {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .howwork-content {
+    width: 100%;
+  }
+
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Responsive styles for FAQ section */
+@media (max-width: 1200px) {
+  .faq-container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .faq-container h1 {
+    font-size: 26px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .faq-container h1 {
+    font-size: 22px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
 }
