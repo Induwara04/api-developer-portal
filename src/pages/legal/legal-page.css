@@ -16,7 +16,7 @@
   left: 0;
   width: 100%;
   height: 50%;
-  background-color: var(--primary-color);
+  background: linear-gradient(35deg, #d1eef5, #9ee3c3);
   z-index: -1;
 }
 
@@ -31,14 +31,17 @@
 }
 
 .legal-hero-content h1 {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 40px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
 }
 
 .legal-hero-content p {
   font-size: 14px;
   line-height: 20px;
+  color: var(--main-text-color);
 }
 
 .legal-hero-header {
@@ -48,7 +51,7 @@
 .legal-hero-content span {
   font-size: 50px;
   margin-bottom: 20px;
-  color: var(--light-color);
+  color: var(--main-text-color);
 }
 
 .legal-hero-subtitle {

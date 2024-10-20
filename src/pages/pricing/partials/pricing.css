@@ -16,7 +16,7 @@
   left: 0;
   width: 100%;
   height: 50%;
-  background-color: var(--primary-color);
+  background: linear-gradient(35deg, #d1eef5, #9ee3c3);
   z-index: -1;
 }
 
@@ -32,7 +32,7 @@
 .pricing-hero-content h1,
 .pricing-hero-content p,
 .pricing-hero-content span {
-  color: var(--font-colour-primary);
+  color: var(--main-text-color);
 }
 
 .pricing-hero-content h1 {
@@ -52,7 +52,7 @@
 .pricing-hero-content span {
   font-size: 50px;
   margin-bottom: 20px;
-  color: var(--light-color);
+  color: var(--primary-color);
 }
 
 .apiprice-hero-subtitle {
@@ -163,7 +163,7 @@
 
 .pricing-btn {
   display: inline-block;
-  padding: 14px 32px;
+  padding: 14px 28px;
   border-radius: 15px;
   font-size: 14px;
   font-weight: 500;
@@ -176,36 +176,36 @@
 
 .basic-btn,
 .premium-btn {
-  background-color: var(--primary-light-color);
-  border: 1px solid rgba(130, 110, 241, 0.5);
+  background-color: var(--primary-color);
+  color: var(--font-colour-primary);
 }
 
 .basic-btn:hover {
-  background-color: #d0cefe;
+  background-color: var(--primary-light-color);
 }
 
 .premium-btn:hover {
-  background-color: #d0cefe;
+  background-color: var(--primary-light-color);
 }
 .essential-btn {
   color: var(--font-colour-primary);
-  background-color: #f59e0b;
+  background-color: var(--dark-yellow-color);
 }
 
 .essential-btn:hover {
-  background-color: #fd9721;
+  background-color: var(--dark-yellow-color);
 }
 
 .popular-plan {
   transform: scale(1.1);
-  border: 3px solid #fd9721;
+  border: 3px solid var(--dark-yellow-color);
   z-index: 1;
   position: relative;
   border-radius: 0 0 20px 20px;
 }
 
 .popular-plan .tag {
-  background-color: #fd9721;
+  background-color: var(--dark-yellow-color);
   color: var(--font-colour-primary);
   padding: 6px 12px;
   font-weight: bold;
@@ -216,7 +216,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  outline: 3px solid #fd9721;
+  outline: 3px solid var(--dark-yellow-color);
   border-radius: 20px 20px 0 0;
 }
 
