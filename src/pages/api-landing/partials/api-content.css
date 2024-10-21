@@ -81,7 +81,7 @@
   width: 83%;
   overflow: hidden;
   max-width: 1800px;
-  border-radius: 12px;
+  border-radius: 25px;
   background: linear-gradient(90deg, #e5f2fb 0%, #e4fbf0 100%);
   box-shadow: 0 2px 2px rgba(125, 124, 124, 0.1);
   margin-top: 20px;
@@ -195,7 +195,7 @@
   overflow: hidden;
   max-width: 1800px;
   margin-top: 60px;
-  border-radius: 12px;
+  border-radius: 25px;
   box-shadow: 0 2px 2px rgba(125, 124, 124, 0.1);
 }
 
@@ -268,7 +268,7 @@
   overflow: hidden;
   max-width: 1800px;
   margin: 60px auto;
-  border-radius: 12px;
+  border-radius: 25px;
   box-shadow: 0 2px 2px rgba(125, 124, 124, 0.1);
 }
 

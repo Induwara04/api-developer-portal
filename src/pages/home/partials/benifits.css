@@ -1,14 +1,10 @@
 .benefits-container {
-  background: linear-gradient(
-    90deg,
-    #e5f2fb 0%,
-    #e4fbf0 100%
-  ); 
+  background: linear-gradient(90deg, #a8cbe1 0%, #daedd7 100%);
   padding: 60px;
-  border-radius: 20px; 
+  border-radius: 20px;
   max-width: 1360px;
   margin: 40px auto;
-  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05); 
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
 }
 
 .dev-sub-header,
@@ -20,14 +16,14 @@
   padding: 0 50px;
   display: flex;
   justify-content: space-between;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .benefit-item {
   background-color: var(--light-bg-color);
   border-radius: 12px;
   padding: 30px;
-  text-align: left; 
+  text-align: left;
   max-width: 400px;
   min-height: 200px;
   flex: 1;
@@ -38,8 +34,8 @@
 }
 
 .benefit-item:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1); 
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
 }
 
 .benefit-image img {

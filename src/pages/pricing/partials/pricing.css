@@ -16,7 +16,7 @@
   left: 0;
   width: 100%;
   height: 50%;
-  background: linear-gradient(35deg, #d1eef5, #9ee3c3);
+  background: linear-gradient(90deg, #a8cbe1 0%, #daedd7 100%);
   z-index: -1;
 }
 
@@ -52,7 +52,7 @@
 .pricing-hero-content span {
   font-size: 50px;
   margin-bottom: 20px;
-  color: var(--primary-color);
+  color: var(--main-text-color);
 }
 
 .apiprice-hero-subtitle {
@@ -176,36 +176,38 @@
 
 .basic-btn,
 .premium-btn {
-  background-color: var(--primary-color);
-  color: var(--font-colour-primary);
+  outline: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .basic-btn:hover {
   background-color: var(--primary-light-color);
+  color: var( --font-colour-primary);
 }
 
 .premium-btn:hover {
   background-color: var(--primary-light-color);
+  color: var( --font-colour-primary);
 }
 .essential-btn {
   color: var(--font-colour-primary);
-  background-color: var(--dark-yellow-color);
+  background-color: var(--primary-color);
 }
 
 .essential-btn:hover {
-  background-color: var(--dark-yellow-color);
+  background-color: var(--primary-light-color);
 }
 
 .popular-plan {
   transform: scale(1.1);
-  border: 3px solid var(--dark-yellow-color);
+  border: 3px solid var(--primary-color);
   z-index: 1;
   position: relative;
   border-radius: 0 0 20px 20px;
 }
 
 .popular-plan .tag {
-  background-color: var(--dark-yellow-color);
+  background-color: var(--primary-color);
   color: var(--font-colour-primary);
   padding: 6px 12px;
   font-weight: bold;
@@ -216,7 +218,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  outline: 3px solid var(--dark-yellow-color);
+  outline: 3px solid var(--primary-color);
   border-radius: 20px 20px 0 0;
 }
 

@@ -8,7 +8,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding: 60px 0;
-  background: linear-gradient(35deg, #d1eef5, #9ee3c3);
+  background: linear-gradient(90deg, #a8cbe1 0%, #daedd7 100%);
   border-radius: 0 0 55px 55px;
 }
 
