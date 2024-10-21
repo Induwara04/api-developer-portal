@@ -1,51 +1,92 @@
-.logo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: var(--main-bg-color);
-  padding: 60px 0;
+.company-section {
+  padding: 50px 0;
+  text-align: center;
 }
 
-.logo-header {
-  font-size: 18px;
-  margin-bottom: 25px;
+.company-header h2 {
+  font-size: 30px;
+  margin-bottom: 16px;
   font-weight: 600;
   color: var(--main-text-color);
-  opacity: 0.7;
+}
+.company-header p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--light-text-color);
+}
+
+.logo-groups {
+  margin-top: 40px;
+}
+
+.logo-group {
+  margin-bottom: 40px;
+}
+
+.logo-group h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 .logo-row {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .logo {
-  width: 120px;
-  height: 50px;
-  margin: 0 15px;
+  max-height: 80px;
+  object-fit: contain;
 }
 
-.explore-link {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
+.vertical-line {
+  width: 2px;
+  height: 80px;
+  background-color: #ddd;
 }
 
-.explore-link a {
-  color: var(--primary-color);
-  font-size: 14px;
+.button-container {
+  margin-top: 40px;
+}
+
+.customer-explore-btn {
+  background-color: var(--primary-color);
+  color: var(--main-bg-color);
+  padding: 12px 24px;
   text-decoration: none;
-  display: flex;
-  align-items: center;
+  border-radius: 25px;
+  font-size: 14px;
 }
 
-.explore-link .bi-arrow-right {
-  margin-left: 5px;
-  color: var(--primary-color);
-  font-size: 15px;
-  margin-top: -5px;
+.customer-explore-btn:hover {
+  background-color: var(--primary-light-color);
+}
+
+@media (max-width: 768px) {
+  .logo-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .company-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .company-header p {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    max-height: 60px;
+  }
+
+  .vertical-line {
+    display: none; 
+  }
 }
